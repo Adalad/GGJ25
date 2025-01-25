@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FrameTime: 0.2
   ChildSprites:
-  - {fileID: 8942691392792166254, guid: e2c8252f314e2dc4fb1ab12305111137, type: 3}
-  - {fileID: -6698720090073736736, guid: e2c8252f314e2dc4fb1ab12305111137, type: 3}
-  - {fileID: 5262038252250329213, guid: e2c8252f314e2dc4fb1ab12305111137, type: 3}
-  - {fileID: 1128267011549185644, guid: e2c8252f314e2dc4fb1ab12305111137, type: 3}
+  - {fileID: 3889327329326522005, guid: 3d393c6b2e8e7234c9efce443c836c7e, type: 3}
+  - {fileID: 6074089057761225624, guid: 3d393c6b2e8e7234c9efce443c836c7e, type: 3}
+  - {fileID: 1608383118588501754, guid: 3d393c6b2e8e7234c9efce443c836c7e, type: 3}
+  - {fileID: 3889327329326522005, guid: 3d393c6b2e8e7234c9efce443c836c7e, type: 3}
   YoungSprites:
   - {fileID: 8942691392792166254, guid: e2c8252f314e2dc4fb1ab12305111137, type: 3}
   - {fileID: -6698720090073736736, guid: e2c8252f314e2dc4fb1ab12305111137, type: 3}

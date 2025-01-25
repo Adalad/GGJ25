@@ -12,3 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e876c10dda28ef48894e594265dcd9a, type: 3}
   m_Name: Quotes
   m_EditorClassIdentifier: 
+  MainQuotes:
+  - "Every child is an artist. The problem is how to remain an artist once we grow
+    up. \u2013 Pablo Picasso"
+  - "Youth is not a time of life; it is a state of mind. \u2013 Samuel Ullman"
+  - "Adulthood is a series of tough decisions, and the first one is to accept that
+    you are no longer a child. \u2013 Unknown "
+  - "Do not regret growing older. It is a privilege denied to many. \u2013 Unknown "
+  - "Life lives on life. This is the sense of the symbol of the Ouroboros, the serpent
+    biting its tail. \u2013 Joseph Campbell  "
