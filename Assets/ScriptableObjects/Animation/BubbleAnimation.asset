@@ -12,8 +12,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c73cdb0597887c74c9ec2b42098c78a0, type: 3}
   m_Name: BubbleAnimation
   m_EditorClassIdentifier: 
-  ChildSprites: []
-  YoungSprites: []
-  AdultSprites: []
-  OldSprites: []
-  AncientSprites: []
+  FrameTime: 0.2
+  ChildSprites:
+  - {fileID: 8942691392792166254, guid: e2c8252f314e2dc4fb1ab12305111137, type: 3}
+  - {fileID: -6698720090073736736, guid: e2c8252f314e2dc4fb1ab12305111137, type: 3}
+  - {fileID: 5262038252250329213, guid: e2c8252f314e2dc4fb1ab12305111137, type: 3}
+  - {fileID: 1128267011549185644, guid: e2c8252f314e2dc4fb1ab12305111137, type: 3}
+  YoungSprites:
+  - {fileID: 8942691392792166254, guid: e2c8252f314e2dc4fb1ab12305111137, type: 3}
+  - {fileID: -6698720090073736736, guid: e2c8252f314e2dc4fb1ab12305111137, type: 3}
+  - {fileID: 5262038252250329213, guid: e2c8252f314e2dc4fb1ab12305111137, type: 3}
+  - {fileID: 1128267011549185644, guid: e2c8252f314e2dc4fb1ab12305111137, type: 3}
+  AdultSprites:
+  - {fileID: 8942691392792166254, guid: e2c8252f314e2dc4fb1ab12305111137, type: 3}
+  - {fileID: -6698720090073736736, guid: e2c8252f314e2dc4fb1ab12305111137, type: 3}
+  - {fileID: 5262038252250329213, guid: e2c8252f314e2dc4fb1ab12305111137, type: 3}
+  - {fileID: 1128267011549185644, guid: e2c8252f314e2dc4fb1ab12305111137, type: 3}
+  OldSprites:
+  - {fileID: 8942691392792166254, guid: e2c8252f314e2dc4fb1ab12305111137, type: 3}
+  - {fileID: -6698720090073736736, guid: e2c8252f314e2dc4fb1ab12305111137, type: 3}
+  - {fileID: 5262038252250329213, guid: e2c8252f314e2dc4fb1ab12305111137, type: 3}
+  - {fileID: 1128267011549185644, guid: e2c8252f314e2dc4fb1ab12305111137, type: 3}
+  AncientSprites:
+  - {fileID: 8942691392792166254, guid: e2c8252f314e2dc4fb1ab12305111137, type: 3}
+  - {fileID: -6698720090073736736, guid: e2c8252f314e2dc4fb1ab12305111137, type: 3}
+  - {fileID: 5262038252250329213, guid: e2c8252f314e2dc4fb1ab12305111137, type: 3}
+  - {fileID: 1128267011549185644, guid: e2c8252f314e2dc4fb1ab12305111137, type: 3}
+  PopSprites:
+  - {fileID: 7491526358799091186, guid: 8897484cced0474419e7d91fb677d9bf, type: 3}
+  - {fileID: -4236390656700269727, guid: 8897484cced0474419e7d91fb677d9bf, type: 3}
+  - {fileID: -1048285641148120644, guid: 8897484cced0474419e7d91fb677d9bf, type: 3}
+  - {fileID: -5797918962399311468, guid: 8897484cced0474419e7d91fb677d9bf, type: 3}

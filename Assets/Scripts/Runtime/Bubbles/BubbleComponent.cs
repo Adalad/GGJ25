@@ -20,8 +20,7 @@ public abstract class BubbleComponent : MonoBehaviour
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
         m_Collider = GetComponent<CircleCollider2D>();
         RefreshSprites();
-        // TODO remove when anims are done
-        //m_AnimationRoutine = StartCoroutine(AnimationRoutine());
+        m_AnimationRoutine = StartCoroutine(AnimationRoutine());
     }
 
     protected abstract void Initialize();
