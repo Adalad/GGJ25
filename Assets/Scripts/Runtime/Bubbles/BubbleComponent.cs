@@ -67,7 +67,7 @@ public abstract class BubbleComponent : MonoBehaviour
         }
     }
 
-    private IEnumerator Die()
+    protected IEnumerator Die()
     {
         m_AudioSource.Play();
         if (m_AnimationRoutine != null)

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TextAnimation : MonoBehaviour
 {
+    public float WaitTime = 1f;
     public float MoveSpeed = 1f;
     public float TopPosition = 200f;
     public float BottomPosition = -100f;
@@ -24,19 +25,26 @@ public class TextAnimation : MonoBehaviour
 
     private IEnumerator MoveRoutine()
     {
+        Vector3 start = m_RectTransform.anchoredPosition;
         Vector3 target = Vector3.up * TopPosition;
+        float ratio = 0f;
         while (Vector3.Distance(m_RectTransform.anchoredPosition, target) > 1f)
         {
-            m_RectTransform.anchoredPosition = Vector3.Lerp(m_RectTransform.anchoredPosition, target, MoveSpeed * Time.deltaTime);
+            m_RectTransform.anchoredPosition = Vector3.Lerp(start, target, ratio);
+            ratio += MoveSpeed * Time.deltaTime;
 
             yield return null;
         }
 
+        yield return new WaitForSeconds(WaitTime);
         m_RectTransform.anchoredPosition = target;
+        start = target;
         target = Vector3.up * BottomPosition;
+        ratio = 0f;
         while (Vector3.Distance(m_RectTransform.anchoredPosition, target) > 1f)
         {
-            m_RectTransform.anchoredPosition = Vector3.Lerp(m_RectTransform.anchoredPosition, target, MoveSpeed * Time.deltaTime);
+            m_RectTransform.anchoredPosition = Vector3.Lerp(start, target, ratio);
+            ratio += MoveSpeed * Time.deltaTime;
 
             yield return null;
         }

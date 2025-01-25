@@ -23,6 +23,11 @@ public class NPCController : BubbleComponent
     public override void GetOlder()
     {
         base.GetOlder();
+        if (CurrentAge > Data.MaxAge)
+        {
+            StartCoroutine(Die());
+        }
+
         m_CurrentAffinity = Map(Data.Affinity.Evaluate(m_CurrentAge / 100f), 0, 1, MaxAffinityDistance, MinAffinityDistance);
     }
 
