@@ -12,6 +12,7 @@ public class PlayerController : BubbleComponent
     private void Awake()
     {
         m_InputActions = new InputActions();
+        Initialize();
     }
 
     //private void OnEnable()
@@ -43,11 +44,12 @@ public class PlayerController : BubbleComponent
 
     protected override void Initialize()
     {
-        m_CurrentAge = 0;
+        m_CurrentAge = -1;
     }
 
     private IEnumerator MoveRoutine()
     {
+        GameManager.Instance.Advance();
         Vector3 target = transform.position + Vector3.up;
         while (Vector3.Distance(transform.position, target) > 0.01f)
         {
@@ -57,7 +59,6 @@ public class PlayerController : BubbleComponent
         }
 
         transform.position = target;
-        GameManager.Instance.Advance();
         m_MoveRoutine = null;
     }
 }

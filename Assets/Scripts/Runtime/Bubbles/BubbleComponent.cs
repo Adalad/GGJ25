@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-[RequireComponent(typeof(SpriteRenderer), typeof(CircleCollider2D))]
+[RequireComponent(typeof(SpriteRenderer), typeof(CircleCollider2D), typeof(AudioSource))]
 public abstract class BubbleComponent : MonoBehaviour
 {
     public BubbleAnimation Animation;
@@ -12,6 +12,7 @@ public abstract class BubbleComponent : MonoBehaviour
     protected int m_CurrentAge;
     private SpriteRenderer m_SpriteRenderer;
     private CircleCollider2D m_Collider;
+    private AudioSource m_AudioSource;
     private Sprite[] m_CurrentSprites;
     private Coroutine m_AnimationRoutine;
 
@@ -19,6 +20,7 @@ public abstract class BubbleComponent : MonoBehaviour
     {
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
         m_Collider = GetComponent<CircleCollider2D>();
+        m_AudioSource = GetComponent<AudioSource>();
         RefreshSprites();
         m_AnimationRoutine = StartCoroutine(AnimationRoutine());
     }
@@ -67,6 +69,7 @@ public abstract class BubbleComponent : MonoBehaviour
 
     private IEnumerator Die()
     {
+        m_AudioSource.Play();
         if (m_AnimationRoutine != null)
         {
             StopCoroutine(m_AnimationRoutine);
