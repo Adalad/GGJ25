@@ -12,4 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adac3c853aa5aa74a9626f4e2707c881, type: 3}
   m_Name: AllBubbles
   m_EditorClassIdentifier: 
-  Bubbles: []
+  Bubbles:
+  - SpawnAge: 0
+    Data: {fileID: 11400000, guid: 02137c96c086d0748af6ecc7bbd60b82, type: 2}
+  - SpawnAge: 0
+    Data: {fileID: 11400000, guid: 3b2e6ff46fbdd974d83e6aced41143be, type: 2}
+  - SpawnAge: 2
+    Data: {fileID: 11400000, guid: 65ad336563945e746a8c5527a2842902, type: 2}
+  - SpawnAge: 2
+    Data: {fileID: 11400000, guid: d5a3bdfdb5b173d45984acf0abe84071, type: 2}
+  - SpawnAge: 0
+    Data: {fileID: 11400000, guid: 1018c65cecebf5a4793b7764dc19a56b, type: 2}
+  - SpawnAge: 0
+    Data: {fileID: 11400000, guid: 7787d8b4a7fa0c3478a7befabdd97f3a, type: 2}
+  - SpawnAge: 4
+    Data: {fileID: 11400000, guid: 703d745f768f87b4f9c025bdb26f37c3, type: 2}
