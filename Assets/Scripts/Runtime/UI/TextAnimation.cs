@@ -10,6 +10,7 @@ public class TextAnimation : MonoBehaviour
     public float BottomPosition = -100f;
     private TMP_Text m_TextMeshPro;
     private RectTransform m_RectTransform;
+    private Coroutine m_MoveRoutine;
 
     private void Start()
     {
@@ -19,8 +20,13 @@ public class TextAnimation : MonoBehaviour
 
     public void BeginText(string newText)
     {
+        if (m_MoveRoutine != null)
+        {
+            StopCoroutine(m_MoveRoutine);
+        }
+
         m_TextMeshPro.text = newText;
-        StartCoroutine(MoveRoutine());
+        m_MoveRoutine = StartCoroutine(MoveRoutine());
     }
 
     private IEnumerator MoveRoutine()

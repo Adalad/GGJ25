@@ -1,12 +1,18 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using static BubbleCollection;
 
 public class GameManager : Singleton<GameManager>
 {
+    public delegate void AgeEvent(int age);
+    public Action BeginPlay;
+    public AgeEvent OnPlayerAged;
     public BubbleCollection BubbleCollection;
+    public Quotes AgeQuotes;
     public TextAnimation TopText;
     public TextAnimation BottomText;
+    public AudioController AudioController;
     private List<BubbleComponent> m_AllBubbles;
     [SerializeField]
     private GameObject m_BubblePrefab;
@@ -20,9 +26,13 @@ public class GameManager : Singleton<GameManager>
         TopText.BeginText("Blow to begin...");
     }
 
-    public void Advance()
+    public void TryAdvance()
     {
         m_AudioSource.Play();
+    }
+
+    public void Advance()
+    {
         foreach (BubbleComponent bubble in m_AllBubbles)
         {
             if (bubble == null)
@@ -64,5 +74,15 @@ public class GameManager : Singleton<GameManager>
             m_AllBubbles.Add(newBubble.GetComponent<BubbleComponent>());
             spawPosition.x += 1;
         }
+    }
+
+    public void PlayerAged(int age)
+    {
+        OnPlayerAged?.Invoke(age);
+    }
+
+    public void IntroReady()
+    {
+        BeginPlay?.Invoke();
     }
 }

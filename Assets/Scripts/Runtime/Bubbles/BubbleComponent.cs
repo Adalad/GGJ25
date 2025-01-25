@@ -63,6 +63,7 @@ public abstract class BubbleComponent : MonoBehaviour
         }
         else
         {
+            OnDie();
         }
     }
 
@@ -84,13 +85,16 @@ public abstract class BubbleComponent : MonoBehaviour
             currentFrame++;
         }
 
-        OnDie();
         Destroy(gameObject);
     }
 
     protected virtual void OnDie()
     {
         StartCoroutine(Die());
+    }
+
+    protected virtual void OnAge()
+    {
     }
 
     private IEnumerator AnimationRoutine()
