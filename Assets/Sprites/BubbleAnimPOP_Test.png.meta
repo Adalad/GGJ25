@@ -1,0 +1,263 @@
+fileFormatVersion: 2
+guid: 8897484cced0474419e7d91fb677d9bf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7491526358799091186
+    second: BubbleAnimPOP_Test_0
+  - first:
+      213: -4236390656700269727
+    second: BubbleAnimPOP_Test_1
+  - first:
+      213: -1048285641148120644
+    second: BubbleAnimPOP_Test_2
+  - first:
+      213: -5797918962399311468
+    second: BubbleAnimPOP_Test_3
+  - first:
+      213: 3718579079007757340
+    second: BubbleAnimPOP_Test_4
+  - first:
+      213: -9066282201396533724
+    second: BubbleAnimPOP_Test_5
+  - first:
+      213: -4281599948539036265
+    second: BubbleAnimPOP_Test_6
+  - first:
+      213: -7432296679256043861
+    second: BubbleAnimPOP_Test_7
+  - first:
+      213: -4625573182107681235
+    second: BubbleAnimPOP_Test_8
+  - first:
+      213: 2792492861853090595
+    second: BubbleAnimPOP_Test_9
+  - first:
+      213: 3061911931727130573
+    second: BubbleAnimPOP_Test_10
+  - first:
+      213: 8912907156858284989
+    second: BubbleAnimPOP_Test_11
+  - first:
+      213: -1806981436162023992
+    second: BubbleAnimPOP_Test_12
+  - first:
+      213: -8606277663369077028
+    second: BubbleAnimPOP_Test_13
+  - first:
+      213: -3469553451393314110
+    second: BubbleAnimPOP_Test_14
+  - first:
+      213: -5779526028580947834
+    second: BubbleAnimPOP_Test_15
+  - first:
+      213: 6393575959143011775
+    second: BubbleAnimPOP_Test_16
+  - first:
+      213: 1287294692946834646
+    second: BubbleAnimPOP_Test_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BubbleAnimPOP_Test_0
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 677
+        width: 192
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f502b1188f37f760800000000000000
+      internalID: 7491526358799091186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BubbleAnimPOP_Test_1
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 678
+        width: 190
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16bb891a4215535c0800000000000000
+      internalID: -4236390656700269727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BubbleAnimPOP_Test_2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 166
+        width: 220
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb1493073cdb371f0800000000000000
+      internalID: -1048285641148120644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BubbleAnimPOP_Test_3
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 153
+        width: 229
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49900b12c67a98fa0800000000000000
+      internalID: -5797918962399311468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e6e07d807413677439912f3efa5c1c0d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BubbleAnimPOP_Test_0: 7491526358799091186
+      BubbleAnimPOP_Test_1: -4236390656700269727
+      BubbleAnimPOP_Test_2: -1048285641148120644
+      BubbleAnimPOP_Test_3: -5797918962399311468
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
