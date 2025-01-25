@@ -31,6 +31,7 @@ public abstract class BubbleComponent : MonoBehaviour
     {
         m_CurrentAge++;
         RefreshSprites();
+        OnAge();
     }
 
     private void RefreshSprites()

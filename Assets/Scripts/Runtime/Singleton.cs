@@ -7,31 +7,15 @@ public class Singleton<T> : MonoBehaviour where T : Component
     {
         get
         {
-            if (instance == null)
-            {
-                instance = (T)FindFirstObjectByType(typeof(T));
-                if (instance == null)
-                {
-                    SetupInstance();
-                }
-            }
             return instance;
         }
     }
+
     public virtual void Awake()
     {
         RemoveDuplicates();
     }
-    private static void SetupInstance()
-    {
-        instance = (T)FindFirstObjectByType(typeof(T));
-        if (instance == null)
-        {
-            GameObject gameObj = new GameObject();
-            gameObj.name = typeof(T).Name;
-            instance = gameObj.AddComponent<T>();
-        }
-    }
+
     private void RemoveDuplicates()
     {
         if (instance == null)

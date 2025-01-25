@@ -33,6 +33,8 @@ public class GameManager : Singleton<GameManager>
 
     public void Advance()
     {
+        List<BubbleComponent> bubblesToRemove = new List<BubbleComponent>();
+        bubblesToRemove.AddRange(m_AllBubbles);
         foreach (BubbleComponent bubble in m_AllBubbles)
         {
             if (bubble == null)
@@ -43,6 +45,7 @@ public class GameManager : Singleton<GameManager>
             bubble.GetOlder();
         }
 
+        m_AllBubbles = bubblesToRemove;
         BottomText.BeginText(m_AllBubbles[0].CurrentAge.ToString());
         SpawnNewBubbles();
     }
