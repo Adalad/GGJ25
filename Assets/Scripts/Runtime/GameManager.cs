@@ -25,11 +25,21 @@ public class GameManager : Singleton<GameManager>
         m_AudioSource.Play();
         foreach (BubbleComponent bubble in m_AllBubbles)
         {
+            if (bubble == null)
+            {
+                continue;
+            }
+
             bubble.GetOlder();
         }
 
         BottomText.BeginText(m_AllBubbles[0].CurrentAge.ToString());
         SpawnNewBubbles();
+    }
+
+    public void BubbleDied(BubbleComponent bubble)
+    {
+        m_AllBubbles.Remove(bubble);
     }
 
     private void SpawnNewBubbles()

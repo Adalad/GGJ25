@@ -169,7 +169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3838ba857aeaff04f8021979a7c1404c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 1
+  WaitTime: 5
+  MoveSpeed: 0.5
   TopPosition: -100
   BottomPosition: 150
 --- !u!114 &8340864
@@ -546,7 +547,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3838ba857aeaff04f8021979a7c1404c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 1
+  WaitTime: 2
+  MoveSpeed: 0.75
   TopPosition: 200
   BottomPosition: -100
 --- !u!114 &244420816
@@ -1198,6 +1200,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5951257261382700680, guid: e544f9202610a724b9157fa86a38ace3, type: 3}
+      propertyPath: m_MaxMove
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -5951257261382700680, guid: e544f9202610a724b9157fa86a38ace3, type: 3}
+      propertyPath: m_MoveSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1418054368224569188, guid: e544f9202610a724b9157fa86a38ace3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

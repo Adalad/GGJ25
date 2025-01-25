@@ -63,12 +63,12 @@ public abstract class BubbleComponent : MonoBehaviour
         }
         else
         {
-            StartCoroutine(Die());
         }
     }
 
     protected IEnumerator Die()
     {
+        GameManager.Instance.BubbleDied(this);
         m_AudioSource.Play();
         if (m_AnimationRoutine != null)
         {
@@ -84,7 +84,13 @@ public abstract class BubbleComponent : MonoBehaviour
             currentFrame++;
         }
 
+        OnDie();
         Destroy(gameObject);
+    }
+
+    protected virtual void OnDie()
+    {
+        StartCoroutine(Die());
     }
 
     private IEnumerator AnimationRoutine()
