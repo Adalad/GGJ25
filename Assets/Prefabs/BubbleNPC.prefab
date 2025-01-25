@@ -104,6 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Animation: {fileID: 11400000, guid: 54e59056158eed148bbf67c3e36c9228, type: 2}
   Data: {fileID: 0}
+  m_ForceMultiplier: 0.2
 --- !u!58 &3620683914110049408
 CircleCollider2D:
   m_ObjectHideFlags: 0

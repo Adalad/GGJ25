@@ -1,20 +1,24 @@
 using System.Collections;
 using UnityEngine;
 
-[RequireComponent(typeof(SpriteRenderer))]
+[RequireComponent(typeof(SpriteRenderer), typeof(CircleCollider2D))]
 public abstract class BubbleComponent : MonoBehaviour
 {
     public BubbleAnimation Animation;
+    public int CurrentAge
+    {
+        get => m_CurrentAge;
+    }
     protected int m_CurrentAge;
     private SpriteRenderer m_SpriteRenderer;
+    private CircleCollider2D m_Collider;
     private Sprite[] m_CurrentSprites;
     private Coroutine m_AnimationRoutine;
 
-    private void Awake() => m_SpriteRenderer = GetComponent<SpriteRenderer>();
-
     private void Start()
     {
-        Initialize();
+        m_SpriteRenderer = GetComponent<SpriteRenderer>();
+        m_Collider = GetComponent<CircleCollider2D>();
         RefreshSprites();
         // TODO remove when anims are done
         //m_AnimationRoutine = StartCoroutine(AnimationRoutine());
@@ -22,7 +26,7 @@ public abstract class BubbleComponent : MonoBehaviour
 
     protected abstract void Initialize();
 
-    public void GetOlder()
+    public virtual void GetOlder()
     {
         m_CurrentAge++;
         RefreshSprites();
@@ -32,23 +36,28 @@ public abstract class BubbleComponent : MonoBehaviour
     {
         if (m_CurrentAge < 15)
         {
+            m_Collider.radius = 0.125f;
             m_CurrentSprites = Animation.ChildSprites;
             return;
         }
         else if (m_CurrentAge < 30)
         {
+            m_Collider.radius = 0.25f;
             m_CurrentSprites = Animation.YoungSprites;
         }
         else if (m_CurrentAge < 55)
         {
+            m_Collider.radius = .5f;
             m_CurrentSprites = Animation.AdultSprites;
         }
         else if (m_CurrentAge < 80)
         {
+            m_Collider.radius = .5f;
             m_CurrentSprites = Animation.OldSprites;
         }
         else if (m_CurrentAge < 100)
         {
+            m_Collider.radius = .5f;
             m_CurrentSprites = Animation.AncientSprites;
         }
         else
