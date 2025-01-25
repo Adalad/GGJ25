@@ -78,6 +78,27 @@ public class GameManager : Singleton<GameManager>
 
     public void PlayerAged(int age)
     {
+        if (age == 15)
+        {
+            TopText.BeginText(AgeQuotes.MainQuotes[0]);
+        }
+        else if (age == 30)
+        {
+            TopText.BeginText(AgeQuotes.MainQuotes[1]);
+        }
+        else if (age == 55)
+        {
+            TopText.BeginText(AgeQuotes.MainQuotes[2]);
+        }
+        else if (age == 80)
+        {
+            TopText.BeginText(AgeQuotes.MainQuotes[3]);
+        }
+        else if (age == 100)
+        {
+            TopText.BeginText(AgeQuotes.MainQuotes[4]);
+        }
+
         OnPlayerAged?.Invoke(age);
     }
 
