@@ -27,7 +27,10 @@ public class PlayerController : BubbleComponent
 
     private void OnDestroy()
     {
-        GameManager.Instance.BeginPlay -= OnBeginPlay;
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.BeginPlay -= OnBeginPlay;
+        }
     }
 
     private void OnEnable()
@@ -92,13 +95,18 @@ public class PlayerController : BubbleComponent
 
     protected override void OnDie()
     {
+        DisableInput();
+        GameManager.Instance?.EndGame(m_CurrentAge);
         base.OnDie();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     protected override void OnAge()
     {
-        GameManager.Instance.PlayerAged(m_CurrentAge);
+        GameManager.Instance?.PlayerAged(m_CurrentAge);
+        if (m_CurrentAge >= 100)
+        {
+            OnDie();
+        }
     }
 
     private void EnableInput()

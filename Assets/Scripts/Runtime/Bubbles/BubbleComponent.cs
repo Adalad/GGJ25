@@ -38,28 +38,28 @@ public abstract class BubbleComponent : MonoBehaviour
     {
         if (m_CurrentAge < 15)
         {
-            m_Collider.radius = 0.125f;
+            transform.localScale = Vector3.one * 0.8f;
             m_CurrentSprites = Animation.ChildSprites;
             return;
         }
         else if (m_CurrentAge < 30)
         {
-            m_Collider.radius = 0.25f;
+            transform.localScale = Vector3.one * 0.9f;
             m_CurrentSprites = Animation.YoungSprites;
         }
         else if (m_CurrentAge < 55)
         {
-            m_Collider.radius = .5f;
+            transform.localScale = Vector3.one;
             m_CurrentSprites = Animation.AdultSprites;
         }
         else if (m_CurrentAge < 80)
         {
-            m_Collider.radius = .5f;
+            transform.localScale = Vector3.one;
             m_CurrentSprites = Animation.OldSprites;
         }
         else if (m_CurrentAge < 100)
         {
-            m_Collider.radius = .5f;
+            transform.localScale = Vector3.one;
             m_CurrentSprites = Animation.AncientSprites;
         }
         else
@@ -107,5 +107,9 @@ public abstract class BubbleComponent : MonoBehaviour
             yield return new WaitForSeconds(Animation.FrameTime);
             currentFrame = (currentFrame + 1) % m_CurrentSprites.Length;
         }
+    }
+
+    public virtual void EndGame()
+    {
     }
 }

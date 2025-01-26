@@ -1,6 +1,8 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using static BubbleCollection;
 
 public class GameManager : Singleton<GameManager>
@@ -52,6 +54,14 @@ public class GameManager : Singleton<GameManager>
 
     public void BubbleDied(BubbleComponent bubble)
     {
+        if (bubble == m_AllBubbles[0])
+        {
+            foreach (BubbleComponent bob in m_AllBubbles)
+            {
+                bubble.EndGame();
+            }
+        }
+
         m_AllBubbles.Remove(bubble);
     }
 
@@ -108,5 +118,22 @@ public class GameManager : Singleton<GameManager>
     public void IntroReady()
     {
         BeginPlay?.Invoke();
+    }
+
+    public void EndGame(int age)
+    {
+        if (age == 100)
+        {
+            return;
+        }
+
+        StartCoroutine(EndGameRoutine());
+    }
+
+    private IEnumerator EndGameRoutine()
+    {
+        TopText.BeginText("You blew your chance!");
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

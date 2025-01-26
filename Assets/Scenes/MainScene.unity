@@ -172,7 +172,7 @@ MonoBehaviour:
   WaitTime: 5
   MoveSpeed: 0.5
   TopPosition: -100
-  BottomPosition: 150
+  BottomPosition: 300
 --- !u!114 &8340864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1438,8 +1438,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c25125998400ee94f9eaf7f9ff99299c, type: 3}
-  m_Resource: {fileID: 8300000, guid: c25125998400ee94f9eaf7f9ff99299c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 466bfb16aee12254d8d4d0ce537976cc, type: 3}
+  m_Resource: {fileID: 8300000, guid: 466bfb16aee12254d8d4d0ce537976cc, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1553,11 +1553,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MusicClips:
+  - {fileID: 8300000, guid: 466bfb16aee12254d8d4d0ce537976cc, type: 3}
+  - {fileID: 8300000, guid: 201d0584629d31340896970b72d6fe62, type: 3}
+  - {fileID: 8300000, guid: bb7a2b629616c974faf665b83268e9a5, type: 3}
   - {fileID: 8300000, guid: c25125998400ee94f9eaf7f9ff99299c, type: 3}
-  - {fileID: 8300000, guid: c25125998400ee94f9eaf7f9ff99299c, type: 3}
-  - {fileID: 8300000, guid: c25125998400ee94f9eaf7f9ff99299c, type: 3}
-  - {fileID: 8300000, guid: c25125998400ee94f9eaf7f9ff99299c, type: 3}
-  - {fileID: 8300000, guid: c25125998400ee94f9eaf7f9ff99299c, type: 3}
+  - {fileID: 8300000, guid: a13a0a1e92edb64468f8688dccefae06, type: 3}
 --- !u!114 &2146703763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1775,6 +1775,10 @@ PrefabInstance:
     - target: {fileID: 5692616582941637236, guid: e544f9202610a724b9157fa86a38ace3, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611245709916708236, guid: e544f9202610a724b9157fa86a38ace3, type: 3}
+      propertyPath: PortName
+      value: COM3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

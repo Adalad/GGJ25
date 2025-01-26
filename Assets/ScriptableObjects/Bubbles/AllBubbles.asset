@@ -27,3 +27,5 @@ MonoBehaviour:
     Data: {fileID: 11400000, guid: 7787d8b4a7fa0c3478a7befabdd97f3a, type: 2}
   - SpawnAge: 4
     Data: {fileID: 11400000, guid: 703d745f768f87b4f9c025bdb26f37c3, type: 2}
+  - SpawnAge: 10
+    Data: {fileID: 11400000, guid: 152eabbb489be3840a553b10bcffa858, type: 2}

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 332508232570272964}
   - component: {fileID: -5951257261382700680}
   - component: {fileID: 2417609545193454076}
+  - component: {fileID: 7611245709916708236}
   - component: {fileID: 2973880438465659768}
   - component: {fileID: 4503477504709827342}
   - component: {fileID: 7774723536439135795}
@@ -138,6 +139,20 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &7611245709916708236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5692616582941637236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c362347b8741245b2d0e5e7ba25021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PortsDropdown: {fileID: 0}
+  ConnectionText: {fileID: 0}
 --- !u!58 &2973880438465659768
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -211,8 +226,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 38c17036a3968fd4d8c8cdf9a631b0e5, type: 3}
+  m_Resource: {fileID: 8300000, guid: 38c17036a3968fd4d8c8cdf9a631b0e5, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

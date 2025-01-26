@@ -12,6 +12,7 @@ public class NPCController : BubbleComponent
     private float m_ForceMultiplier = 1f;
     private const float MaxAffinityDistance = 5f;
     private const float MinAffinityDistance = 1f;
+    private Vector3 m_LastPosition = Vector3.zero;
 
     private void Awake() => m_Rigidbody = GetComponent<Rigidbody2D>();
 
@@ -42,12 +43,17 @@ public class NPCController : BubbleComponent
 
     private IEnumerator MovementRoutine()
     {
+        if (m_Target != null)
+        {
+            m_LastPosition = m_Target.position;
+        }
+
         float currentDistance;
         Vector3 direction;
         while (true)
         {
-            currentDistance = Vector3.Distance(m_Target.position, transform.position);
-            direction = (m_Target.position - transform.position).normalized * m_ForceMultiplier;
+            currentDistance = Vector3.Distance(m_LastPosition, transform.position);
+            direction = (m_LastPosition - transform.position).normalized * m_ForceMultiplier;
             if (currentDistance < m_CurrentAffinity)
             {
                 direction *= -1;
@@ -62,5 +68,10 @@ public class NPCController : BubbleComponent
     private float Map(float x, float in_min, float in_max, float out_min, float out_max)
     {
         return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+    }
+
+    public override void EndGame()
+    {
+        StopAllCoroutines();
     }
 }
