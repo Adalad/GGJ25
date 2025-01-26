@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a8b8f530a706bf642bbc1551ac16813d, type: 3}
-  m_Name: Childhood Friend 1
+  m_Name: 2 Father
   m_EditorClassIdentifier: 
   Affinity:
     serializedVersion: 2
@@ -18,59 +18,59 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 1
-      inSlope: -0.109822825
-      outSlope: -0.109822825
+      inSlope: 0.011246582
+      outSlope: 0.011246582
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.08733359
-      value: 0.9904088
-      inSlope: -0.058819752
-      outSlope: -0.058819752
+      time: 0.20108505
+      value: 1.0022615
+      inSlope: -0.0048911273
+      outSlope: -0.0048911273
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.22895221
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.3182787
+      value: 0.9433937
+      inSlope: -1.448761
+      outSlope: -1.448761
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.3019405
-      value: 0.98873127
-      inSlope: -0.064669095
-      outSlope: -0.064669095
-      tangentMode: 34
+      time: 0.57364136
+      value: 0.33174658
+      inSlope: 0.15172035
+      outSlope: 0.15172035
+      tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
-      outWeight: 0.33333334
+      outWeight: 0.34079117
     - serializedVersion: 3
-      time: 0.5141411
-      value: 0.9629443
-      inSlope: -0.11529398
-      outSlope: -0.11529398
-      tangentMode: 34
+      time: 0.74643165
+      value: 0.5783924
+      inSlope: -0.2037906
+      outSlope: -0.2037906
+      tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0.28568962
+      outWeight: 0.17946982
     - serializedVersion: 3
-      time: 0.7312272
-      value: 0.9392675
-      inSlope: -0.052732486
-      outSlope: -0.052732486
+      time: 0.9977417
+      value: 0.2625885
+      inSlope: -1.2566305
+      outSlope: -1.2566305
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.9885482
-      value: 0.94019425
-      inSlope: 0.0036014668
-      outSlope: 0.0036014668
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  StartingAge: 10
-  MaxAge: 80
+  StartingAge: 30
+  MaxAge: 82

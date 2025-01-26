@@ -29,3 +29,29 @@ MonoBehaviour:
     Data: {fileID: 11400000, guid: 703d745f768f87b4f9c025bdb26f37c3, type: 2}
   - SpawnAge: 10
     Data: {fileID: 11400000, guid: 152eabbb489be3840a553b10bcffa858, type: 2}
+  - SpawnAge: 6
+    Data: {fileID: 11400000, guid: 22b3ca3df6b91174280a1217db73bcb2, type: 2}
+  - SpawnAge: 10
+    Data: {fileID: 11400000, guid: 152eabbb489be3840a553b10bcffa858, type: 2}
+  - SpawnAge: 11
+    Data: {fileID: 11400000, guid: 00f1c041f3efe8c418ad0538439ace6d, type: 2}
+  - SpawnAge: 11
+    Data: {fileID: 11400000, guid: be22a253f7ed03f48ab6e2d29d56131b, type: 2}
+  - SpawnAge: 26
+    Data: {fileID: 11400000, guid: 1a69cda139b12894080fe153ca57d7f6, type: 2}
+  - SpawnAge: 25
+    Data: {fileID: 11400000, guid: c4888a8db49ec014a8563c5713f020da, type: 2}
+  - SpawnAge: 16
+    Data: {fileID: 11400000, guid: dc29e9d4cd8a11048bdbc8d5e518d93e, type: 2}
+  - SpawnAge: 22
+    Data: {fileID: 11400000, guid: 4e302da0b257d844bb9156197383b826, type: 2}
+  - SpawnAge: 18
+    Data: {fileID: 11400000, guid: 50c4a55d3d8f4e844af101d1384a2869, type: 2}
+  - SpawnAge: 4
+    Data: {fileID: 11400000, guid: e208f3c32200f6d4ab78f601395a75e7, type: 2}
+  - SpawnAge: 4
+    Data: {fileID: 11400000, guid: 7c30fff199c0e37489a3e884e33c5e51, type: 2}
+  - SpawnAge: 5
+    Data: {fileID: 11400000, guid: 7953c1865bf42194e885b8b9a7808a51, type: 2}
+  - SpawnAge: 24
+    Data: {fileID: 11400000, guid: 41fd3839220d220429ae9a7c81906980, type: 2}
