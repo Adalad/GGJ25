@@ -124,7 +124,11 @@ public class PlayerController : BubbleComponent
 
     private void DisableInput()
     {
-        BlowSlider.gameObject.SetActive(false);
+        if (BlowSlider != null)
+        {
+            BlowSlider.gameObject.SetActive(false);
+        }
+
         m_InputActions.Disable();
         m_InputActions.Player.Disable();
         m_InputActions.Player.Interact.Disable();
