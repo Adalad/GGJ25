@@ -10,7 +10,7 @@ public class NPCController : BubbleComponent
     private float m_CurrentAffinity;
     [SerializeField]
     private float m_ForceMultiplier = 1f;
-    private const float MaxAffinityDistance = 4f;
+    private const float MaxAffinityDistance = 10f;
     private const float MinAffinityDistance = 1f;
     private Vector3 m_LastPosition = Vector3.zero;
 
@@ -43,15 +43,15 @@ public class NPCController : BubbleComponent
 
     private IEnumerator MovementRoutine()
     {
-        if (m_Target != null)
-        {
-            m_LastPosition = m_Target.position;
-        }
-
         float currentDistance;
         Vector3 direction;
         while (true)
         {
+            if (m_Target != null)
+            {
+                m_LastPosition = m_Target.position;
+            }
+
             currentDistance = Vector3.Distance(m_LastPosition, transform.position);
             direction = (m_LastPosition - transform.position) * m_ForceMultiplier;
             if (currentDistance < m_CurrentAffinity)

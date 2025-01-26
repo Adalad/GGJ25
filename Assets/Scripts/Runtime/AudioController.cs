@@ -17,25 +17,25 @@ public class AudioController : MonoBehaviour
     {
         float currentTime = m_AudioSource.time;
 
-        if (age < 15)
-        {
-            return;
-        }
-        else if (age < 30)
+        if (age == 15)
         {
             m_AudioSource.clip = MusicClips[1];
         }
-        else if (age < 55)
+        else if (age == 30)
         {
             m_AudioSource.clip = MusicClips[2];
         }
-        else if (age < 80)
+        else if (age == 55)
         {
             m_AudioSource.clip = MusicClips[3];
         }
-        else if (age < 100)
+        else if (age == 80)
         {
             m_AudioSource.clip = MusicClips[4];
+        }
+        else
+        {
+            return;
         }
 
         m_AudioSource.time = currentTime;
