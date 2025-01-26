@@ -316,6 +316,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11d1c0d2b4404fa4db35994a99408136, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StartingMessages:
+  - 
+  - 
+  - 
+  - 
+  - 
   Credits:
   - Congratulations, you lived a long life.
   - It was hard but you kept blowing up.

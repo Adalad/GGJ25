@@ -7,6 +7,7 @@ using static BubbleCollection;
 
 public class GameManager : Singleton<GameManager>
 {
+    public string[] StartingMessages;
     public string[] Credits;
     public int PlayerAge
     {
@@ -98,25 +99,38 @@ public class GameManager : Singleton<GameManager>
 
     public void PlayerAged(int age)
     {
-        if (age == 15)
+        switch (age)
         {
-            TopText.BeginText(AgeQuotes.MainQuotes[0]);
-        }
-        else if (age == 30)
-        {
-            TopText.BeginText(AgeQuotes.MainQuotes[1]);
-        }
-        else if (age == 55)
-        {
-            TopText.BeginText(AgeQuotes.MainQuotes[2]);
-        }
-        else if (age == 80)
-        {
-            TopText.BeginText(AgeQuotes.MainQuotes[3]);
-        }
-        else if (age == 100)
-        {
-            TopText.BeginText(AgeQuotes.MainQuotes[4]);
+            case 1:
+                TopText.BeginText(StartingMessages[0]);
+                break;
+            case 2:
+                TopText.BeginText(StartingMessages[1]);
+                break;
+            case 3:
+                TopText.BeginText(StartingMessages[2]);
+                break;
+            case 4:
+                TopText.BeginText(StartingMessages[3]);
+                break;
+            case 5:
+                TopText.BeginText(StartingMessages[4]);
+                break;
+            case 15:
+                TopText.BeginText(AgeQuotes.MainQuotes[0]);
+                break;
+            case 30:
+                TopText.BeginText(AgeQuotes.MainQuotes[1]);
+                break;
+            case 55:
+                TopText.BeginText(AgeQuotes.MainQuotes[2]);
+                break;
+            case 80:
+                TopText.BeginText(AgeQuotes.MainQuotes[3]);
+                break;
+            case 100:
+                TopText.BeginText(AgeQuotes.MainQuotes[4]);
+                break;
         }
 
         OnPlayerAged?.Invoke(age);
