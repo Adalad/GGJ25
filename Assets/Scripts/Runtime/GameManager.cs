@@ -7,6 +7,14 @@ using static BubbleCollection;
 
 public class GameManager : Singleton<GameManager>
 {
+    public string[] Credits;
+    public int PlayerAge
+    {
+        get
+        {
+            return m_AllBubbles[0].CurrentAge;
+        }
+    }
     public delegate void AgeEvent(int age);
     public Action BeginPlay;
     public AgeEvent OnPlayerAged;
@@ -37,7 +45,7 @@ public class GameManager : Singleton<GameManager>
     {
         List<BubbleComponent> bubblesToRemove = new List<BubbleComponent>();
         bubblesToRemove.AddRange(m_AllBubbles);
-        foreach (BubbleComponent bubble in m_AllBubbles)
+        foreach (BubbleComponent bubble in bubblesToRemove)
         {
             if (bubble == null)
             {
@@ -124,6 +132,7 @@ public class GameManager : Singleton<GameManager>
     {
         if (age == 100)
         {
+            StartCoroutine(CreditsRoutine());
             return;
         }
 
@@ -135,5 +144,16 @@ public class GameManager : Singleton<GameManager>
         TopText.BeginText("You blew your chance!");
         yield return new WaitForSeconds(5f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    private IEnumerator CreditsRoutine()
+    {
+        for (int i = 0; i < Credits.Length; i++)
+        {
+            TopText.BeginText(Credits[i]);
+            yield return new WaitForSeconds(5f);
+        }
+
+        Application.Quit();
     }
 }

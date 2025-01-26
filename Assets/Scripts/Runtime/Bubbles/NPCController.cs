@@ -10,7 +10,7 @@ public class NPCController : BubbleComponent
     private float m_CurrentAffinity;
     [SerializeField]
     private float m_ForceMultiplier = 1f;
-    private const float MaxAffinityDistance = 5f;
+    private const float MaxAffinityDistance = 4f;
     private const float MinAffinityDistance = 1f;
     private Vector3 m_LastPosition = Vector3.zero;
 
@@ -29,7 +29,7 @@ public class NPCController : BubbleComponent
             OnDie();
         }
 
-        m_CurrentAffinity = Map(Data.Affinity.Evaluate(m_CurrentAge / 100f), 0, 1, MaxAffinityDistance, MinAffinityDistance);
+        m_CurrentAffinity = Map(Data.Affinity.Evaluate(GameManager.Instance.PlayerAge / 100f), 0, 1, MaxAffinityDistance, MinAffinityDistance);
     }
 
     public void Setup(Transform target, BubbleData data)
@@ -37,7 +37,7 @@ public class NPCController : BubbleComponent
         m_Target = target;
         Data = data;
         Initialize();
-        m_CurrentAffinity = Map(Data.Affinity.Evaluate(m_CurrentAge / 100f), 0, 1, MaxAffinityDistance, MinAffinityDistance);
+        m_CurrentAffinity = Map(Data.Affinity.Evaluate(GameManager.Instance.PlayerAge / 100f), 0, 1, MaxAffinityDistance, MinAffinityDistance);
         StartCoroutine(MovementRoutine());
     }
 
@@ -53,7 +53,7 @@ public class NPCController : BubbleComponent
         while (true)
         {
             currentDistance = Vector3.Distance(m_LastPosition, transform.position);
-            direction = (m_LastPosition - transform.position).normalized * m_ForceMultiplier;
+            direction = (m_LastPosition - transform.position) * m_ForceMultiplier;
             if (currentDistance < m_CurrentAffinity)
             {
                 direction *= -1;
