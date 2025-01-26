@@ -317,11 +317,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingMessages:
-  - 
-  - 
-  - 
-  - 
-  - 
+  - 'Welcome, your first year in this world has passed, let''s see what life has
+    for this one. '
+  - 'With your family, your parents and those who are around, your first year is
+    a blessing for all. '
+  - 'Everything is new, and even if that can be scary, you can count on the people
+    around you. '
+  - 'But they can''t be around you forever. Try to appreciate them in their part
+    of your life. '
+  - 'Take care of yourself, going too fast in live can be dangerous. '
   Credits:
   - Congratulations, you lived a long life.
   - It was hard but you kept blowing up.
