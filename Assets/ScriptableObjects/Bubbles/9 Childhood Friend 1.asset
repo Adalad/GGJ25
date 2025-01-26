@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a8b8f530a706bf642bbc1551ac16813d, type: 3}
-  m_Name: First Love
+  m_Name: 9 Childhood Friend 1
   m_EditorClassIdentifier: 
   Affinity:
     serializedVersion: 2
@@ -18,68 +18,59 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 1
-      inSlope: -0.4219762
-      outSlope: -0.4219762
+      inSlope: -0.109822825
+      outSlope: -0.109822825
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.09128104
-      value: 0.9614816
-      inSlope: -0.2578496
-      outSlope: -0.2578496
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.21268299
-      value: 0.9322304
-      inSlope: 0.020166308
-      outSlope: 0.020166308
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.26754248
-      value: 0.9978365
-      inSlope: -0.044598985
-      outSlope: -0.044598985
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.36729446
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.3714034
-      value: 0.9894366
-      inSlope: -0.8070487
-      outSlope: -0.8070487
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33365405
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.47464234
-      value: 0.27834082
-      inSlope: -0.11549041
-      outSlope: -0.11549041
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.09533858
-    - serializedVersion: 3
-      time: 0.9977417
-      value: 0.2625885
-      inSlope: -0.030113429
-      outSlope: -0.030113429
+      time: 0.08733359
+      value: 0.9904088
+      inSlope: -0.058819752
+      outSlope: -0.058819752
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
-      outWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.3019405
+      value: 0.98873127
+      inSlope: -0.064669095
+      outSlope: -0.064669095
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.5141411
+      value: 0.9629443
+      inSlope: -0.11529398
+      outSlope: -0.11529398
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.7312272
+      value: 0.9392675
+      inSlope: -0.052732486
+      outSlope: -0.052732486
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.9885482
+      value: 0.94019425
+      inSlope: 0.0036014668
+      outSlope: 0.0036014668
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  StartingAge: 14
-  MaxAge: 18
+  StartingAge: 10
+  MaxAge: 80
