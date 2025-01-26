@@ -2,10 +2,11 @@ using System.Collections;
 using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerController : BubbleComponent
 {
+    public Slider BlowSlider;
     public CinemachineCamera PlayerCamera;
     [SerializeField]
     private float m_MoveSpeed = 1f;
@@ -19,6 +20,7 @@ public class PlayerController : BubbleComponent
 
     private void Awake()
     {
+        BlowSlider.gameObject.SetActive(false);
         m_InputActions = new InputActions();
         m_Ready = false;
         GameManager.Instance.BeginPlay += OnBeginPlay;
@@ -77,6 +79,7 @@ public class PlayerController : BubbleComponent
         {
             m_MoveAmmount += m_MoveSpeed * Time.deltaTime;
             m_MoveAcum += m_MoveSpeed * Time.deltaTime;
+            BlowSlider.value = m_MoveAcum / m_MaxMove;
             newPosition.y += m_MoveSpeed * Time.deltaTime;
             transform.position = newPosition;
             if (m_MoveAcum >= m_MaxMove)
@@ -116,10 +119,12 @@ public class PlayerController : BubbleComponent
         m_InputActions.Player.Interact.Enable();
         m_InputActions.Player.Enable();
         m_InputActions.Enable();
+        BlowSlider.gameObject.SetActive(true);
     }
 
     private void DisableInput()
     {
+        BlowSlider.gameObject.SetActive(false);
         m_InputActions.Disable();
         m_InputActions.Player.Disable();
         m_InputActions.Player.Interact.Disable();

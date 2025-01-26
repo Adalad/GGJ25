@@ -33,7 +33,6 @@ public class GameManager : Singleton<GameManager>
         m_AudioSource = GetComponent<AudioSource>();
         m_AllBubbles = new List<BubbleComponent>();
         m_AllBubbles.Add(FindFirstObjectByType<BubbleComponent>());
-        TopText.BeginText("Blow to begin...");
     }
 
     public void TryAdvance()
@@ -125,6 +124,7 @@ public class GameManager : Singleton<GameManager>
 
     public void IntroReady()
     {
+        TopText.BeginText("Blow to begin...");
         BeginPlay?.Invoke();
     }
 
