@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b8f530a706bf642bbc1551ac16813d, type: 3}
+  m_Name: Spouse
+  m_EditorClassIdentifier: 
+  Affinity:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.43782267
+      outSlope: -0.43782267
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.17292824
+      value: 0.9242881
+      inSlope: -0.11549041
+      outSlope: -0.11549041
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.09533858
+    - serializedVersion: 3
+      time: 0.3791831
+      value: 0.99952734
+      inSlope: -0.008411918
+      outSlope: -0.008411918
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.107497744
+    - serializedVersion: 3
+      time: 0.605414
+      value: 0.9985038
+      inSlope: 0.011603771
+      outSlope: 0.011603771
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.80149066
+      value: 0.9220444
+      inSlope: 0.0135897435
+      outSlope: 0.0135897435
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.994812
+      value: 1.0036411
+      inSlope: 0.42207822
+      outSlope: 0.42207822
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  StartingAge: 20
+  MaxAge: 99

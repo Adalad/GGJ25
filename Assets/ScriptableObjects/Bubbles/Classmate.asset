@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b8f530a706bf642bbc1551ac16813d, type: 3}
+  m_Name: Classmate
+  m_EditorClassIdentifier: 
+  Affinity:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.0014770329
+      value: 0.2461375
+      inSlope: -0.040944383
+      outSlope: -0.040944383
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.14666738
+      value: 0.24019277
+      inSlope: -0.2578496
+      outSlope: -0.2578496
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.30741653
+      value: 0.8291486
+      inSlope: -0.044598985
+      outSlope: -0.044598985
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.36729446
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.35812223
+      value: 0.7381534
+      inSlope: -0.7290347
+      outSlope: -0.7290347
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.48337486
+      value: 0.78030163
+      inSlope: -2.7681854
+      outSlope: -2.7681854
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.6282678
+      value: 0.38652563
+      inSlope: -0.11549041
+      outSlope: -0.11549041
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.09533858
+    - serializedVersion: 3
+      time: 0.9977417
+      value: 0.2625885
+      inSlope: -0.33544222
+      outSlope: -0.33544222
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  StartingAge: 30
+  MaxAge: 80
